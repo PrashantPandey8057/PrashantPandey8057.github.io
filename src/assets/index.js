@@ -1,4 +1,10 @@
 import prashant from "./Prashant.png";
+import django from "./png-transparent-django-line-logo-icon-thumbnail.png"
+import python from "./python.png"
+import javascript from "./javascript.png"
+import reactjs from "./reactjs.png"
+import redux from "./redux.png"
+
 import check from "./check.svg";
 import brainwaveSymbol from "./brainwave-symbol.svg";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
@@ -144,4 +150,9 @@ export {
   instagram,
   telegram,
   twitter,
+  django,
+  reactjs,
+  python,
+  javascript,
+  redux,
 };

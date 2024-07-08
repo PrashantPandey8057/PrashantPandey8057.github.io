@@ -33,19 +33,23 @@ import {
   sliders04,
   telegram,
   twitter,
-  yourlogo,
+  django,
+  reactjs,
+  python,
+  javascript,
+  redux,
 } from "../assets";
 
 export const navigation = [
   {
     id: "0",
     title: "Home",
-    url: "#features",
+    url: "#hero",
   },
   {
     id: "1",
     title: "Projects",
-    url: "#pricing",
+    url: "#projects",
   },
   {
     id: "2",
@@ -63,7 +67,7 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [python, django, javascript, reactjs, redux];
 
 export const brainwaveServices = [
   "Photo generating",
