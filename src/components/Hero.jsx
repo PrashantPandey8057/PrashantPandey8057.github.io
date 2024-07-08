@@ -38,7 +38,7 @@ const Hero = () => {
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
           I'm a software engineer who writes clean, elegant code and open-source projects. I create and write about life, code, design, and more. Welcome to my digital garden.
           </p>
-          <Button href="/resume" white>
+          <Button href="src/assets/resume/prashant-resume.pdf" white>
             Checkout My Resume 
           </Button>
         </div>

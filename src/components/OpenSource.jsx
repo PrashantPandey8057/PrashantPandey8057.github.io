@@ -2,17 +2,17 @@ import Button from "./Button";
 import Heading from "./Heading";
 import Section from "./Section";
 import Tagline from "./Tagline";
-import { roadmap } from "../constants";
+import { osprojects } from "../constants";
 import { check2, grid, loading1 } from "../assets";
 import { Gradient } from "./design/Roadmap";
 
-const Roadmap = () => (
-  <Section className="overflow-hidden" id="roadmap">
+const OpenSource = () => (
+  <Section className="overflow-hidden" id="osprojects">
     <div className="container md:pb-10">
-      <Heading tag="Ready to get started" title="What we’re working on" />
+      <Heading tag="" title="Open source projects that I have worked on" />
 
       <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
-        {roadmap.map((item) => {
+        {osprojects.map((item) => {
           const status = item.status === "done" ? "Done" : "In progress";
 
           return (
@@ -57,8 +57,19 @@ const Roadmap = () => (
                       alt={item.title}
                     />
                   </div>
-                  <h4 className="h4 mb-4">{item.title}</h4>
+                  <h4 className="h4 mb-4">{item.title}</h4> 
+                       
                   <p className="body-2 text-n-4">{item.text}</p>
+                  
+                  <a
+                    key={item.id}
+                    href={item.githubURL}
+                    target="_blank"
+                    className="flex items-center justify-center w-10 h-10 bg-n-7 rounded-full transition-colors hover:bg-n-6"
+                  >
+                    <img src={item.icon} width={16} height={16} alt={item.title} />
+                  </a>
+
                 </div>
               </div>
             </div>
@@ -69,10 +80,10 @@ const Roadmap = () => (
       </div>
 
       <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
-        <Button href="/roadmap">Our roadmap</Button>
+        <Button href="https://github.com/prashantpandey9">Explore More</Button>
       </div>
     </div>
   </Section>
 );
 
-export default Roadmap;
+export default OpenSource;
